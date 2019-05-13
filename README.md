@@ -10,7 +10,7 @@ A web application for uprising volleyball page.
 3. > Event formatting and management
 4. > National ranking and seeding program
 5. > Athlete pages that can be updated by the athlete.  With their results updated automatically.
-6. >
+6. > Integrated email marketing
 7. >
 ## Component Structure
 ![Component Diagram](https://github.com/Thearyim/capstone-uprising-volleyball/blob/master/src/assets/documentation/ComponentDiagram.PNG)
