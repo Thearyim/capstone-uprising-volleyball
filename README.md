@@ -8,7 +8,7 @@ A web application for uprising volleyball page.
 1. > Membership sales and database
 2. > Event registration with credit card processing
 3. > Event formatting and management
-4. >
+4. > National ranking and seeding program
 5. >
 6. >
 7. >
