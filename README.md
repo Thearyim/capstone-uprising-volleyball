@@ -7,7 +7,7 @@ A web application for uprising volleyball page.
 ## Specs
 1. > Membership sales and database
 2. > Event registration with credit card processing
-3. >
+3. > Event formatting and management
 4. >
 5. >
 6. >
