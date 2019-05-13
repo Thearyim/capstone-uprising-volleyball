@@ -2,15 +2,10 @@
 #### A web application using React created on 05/12/2019 by Theary Im.
 
 ## Description
-A web application for .
-
-**Note on the differences between Angular and React:**
-
-* Angular uses two directional data flow process where it updates the real DOM directly while React updates only the virtual DOM and is concerned with the one directional data flow.
-* Both Angular and React are made of components. Components in React take in arguments and return value like functions. Components in React also allows us to add html text and styling whereas components in Angular have units that contain business, user interface logic, HTML and CSS.
+A web application for uprising volleyball page.
 
 ## Specs
-1. >
+1. > Membership sales and database
 2. >
 3. >
 4. >
