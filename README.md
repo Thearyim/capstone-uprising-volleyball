@@ -9,7 +9,7 @@ A web application for uprising volleyball page.
 2. > Event registration with credit card processing
 3. > Event formatting and management
 4. > National ranking and seeding program
-5. >
+5. > Athlete pages that can be updated by the athlete.  With their results updated automatically.
 6. >
 7. >
 ## Component Structure
