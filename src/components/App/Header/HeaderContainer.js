@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import uprisingLogo from '../assets/images/uprising_logo.png';
-import searchButtonIcon from '../assets/images/search_button_icon.png';
-import shoppingCartIcon from '../assets/images/shopping_cart_icon.png';
+import uprisingLogo from '../../../assets/images/uprising_logo.png';
+import searchButtonIcon from '../../../assets/images/search_button_icon.png';
+import shoppingCartIcon from '../../../assets/images/shopping_cart_icon.png';
 
-export default function Header() {
+const HeaderContainer = () => {
 
   return(
     <div>
@@ -63,7 +63,7 @@ export default function Header() {
           <div className="header-search">
             <form className="form-inline my-2 my-lg-0">
               <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-              <button class="btn btn-outline-dark my-1" type="submit">
+              <button className="btn btn-outline-dark my-1" type="submit">
                 <img src={searchButtonIcon} />
               </button>
             </form>
@@ -76,3 +76,5 @@ export default function Header() {
     </div>
   );
 }
+
+export default HeaderContainer;
