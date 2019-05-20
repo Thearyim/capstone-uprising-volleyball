@@ -18,32 +18,25 @@ const HeaderContainer = () => {
           <div className="collapse navbar-collapse" id="navbarNavDropdown">
             <ul className="navbar-nav">
               <li className="nav-item active">
-                <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
+                <Link className="nav-link" to="/">Home</Link>
               </li>
               <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Tournaments
                 </a>
                 <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a className="dropdown-item" href="#">2019 Tournamnet Schedule</a>
+                  <Link className="dropdown-item" to="/tournaments/adults">Adults</Link>
+                  <Link className="dropdown-item" to="/tournaments/juniors">Juniors</Link>
                 </div>
               </li>
               <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Adults
+                  Leagues
                 </a>
                 <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a className="dropdown-item" href="#">Players</a>
+                  <a className="dropdown-item" href="#">Adult Leagues</a>
+                  <a className="dropdown-item" href="#">Junior Leagues</a>
                   <a className="dropdown-item" href="#">Volleyball Fantasy</a>
-                </div>
-              </li>
-              <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Juniors
-                </a>
-                <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a className="dropdown-item" href="#">Players</a>
-                  <a className="dropdown-item" href="#">Leagues</a>
                 </div>
               </li>
               <li className="nav-item">
