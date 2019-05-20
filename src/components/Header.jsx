@@ -2,30 +2,16 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import uprisingLogo from '../assets/images/uprising_logo.png';
+import searchButtonIcon from '../assets/images/search_button_icon.png';
+import shoppingCartIcon from '../assets/images/shopping_cart_icon.png';
 
 export default function Header() {
-
-  var headerStyle={
-    height: '50px'
-  };
-
-  var searchButtonStyle={
-    height: '28px'
-  }
-
-  var shoppingCartStyle={
-    height: '30px'
-  }
-
-  var cartStyle={
-    float: 'right'
-  }
 
   return(
     <div>
       <div className="header">
         <nav className="navbar navbar-expand-lg navbar-light bg-warning">
-          <img className="navbar-brand" src={uprisingLogo} style={headerStyle}></img>
+          <img className="brand-logo" src={uprisingLogo} />
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -74,9 +60,16 @@ export default function Header() {
               </li>
             </ul>
           </div>
-          <div style={cartStyle}>
-            <img style={searchButtonStyle} src="http://www.pngmart.com/files/8/Search-Button-PNG-HD-Photo.png" alt=""></img>
-            <img style={shoppingCartStyle} src="http://pngimg.com/uploads/shopping_cart/shopping_cart_PNG38.png" alt=""></img>
+          <div className="header-search">
+            <form className="form-inline my-2 my-lg-0">
+              <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+              <button class="btn btn-outline-dark my-1" type="submit">
+                <img src={searchButtonIcon} />
+              </button>
+            </form>
+          </div>
+          <div className="header-shopping-cart">
+            <img src={shoppingCartIcon} alt="Shopping Cart Icon"></img>
           </div>
         </nav>
       </div>

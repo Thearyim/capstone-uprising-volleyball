@@ -5,6 +5,7 @@ import { AppContainer } from 'react-hot-loader';
 import { HashRouter } from 'react-router-dom';
 
 import 'bootstrap/dist/css/bootstrap.css';
+import './assets/css/styles.css';
 
 const render = (Component) => {
   ReactDOM.render(
