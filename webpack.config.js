@@ -46,6 +46,10 @@ module.exports = {
         }
       },
       {
+        test: /\.css$/,
+        loader: 'style-loader!css-loader'
+      },
+      {
       test: /\.(png|gif|jp(e*)g|svg)$/,
       use: {
         loader: 'url-loader',
@@ -64,7 +68,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template:'template.ejs',
       appMountId: 'react-app-root',
-      title: 'React Tap Room',
+      title: 'Uprising Volleyball',
       filename: resolve(__dirname, "build", "index.html"),
     }),
   ]
