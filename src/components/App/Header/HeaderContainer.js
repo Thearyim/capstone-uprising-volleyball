@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import './HeaderContainer.css';
 import uprisingLogo from '../../../assets/images/uprising_logo.png';
 import searchButtonIcon from '../../../assets/images/search_button_icon.png';
 import shoppingCartIcon from '../../../assets/images/shopping_cart_icon.png';

@@ -1,0 +1,39 @@
+.header {
+}
+
+.header nav {
+    height: 90px;
+}
+
+.brand-logo {
+    height: 45px;
+    margin-bottom: 30px;
+}
+
+.header-search {
+  margin-right: 30px;
+}
+
+.header-search button {
+  height: 35px;
+  width: 50px;
+}
+
+.header-search button:hover {
+  background-color: #FFD000;
+  border: 1px solid white;
+}
+
+.header-search button img {
+  height: 22px;
+  margin-bottom: 7px;
+}
+
+.header-shopping-cart {
+  height: 30px;
+  float: right;
+}
+
+.header-shopping-cart img {
+  height: 30px;
+}

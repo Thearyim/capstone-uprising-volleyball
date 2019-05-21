@@ -1,0 +1,20 @@
+.tournament {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: 1px solid #DDD;
+  border-radius: 3px;
+}
+
+.tournament-name {
+  font-size: 13pt;
+  font-weight: bold;
+  color: blue;
+}
+
+.tournament-date {
+  font-size: 12pt;
+  font-weight: bold;
+}
+
+.tournament-description {
+}

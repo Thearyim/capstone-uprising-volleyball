@@ -6,26 +6,26 @@ import TournamentContainer from './Tournaments/TournamentContainer.js';
 
 const App = () => {
 
-    return(
-        <div>
-          <HeaderContainer />
-          <Switch>
-              <Route exact path="/" component={HomeContainer} />
-              <Route
-                  path="/tournaments/adults"
-                  render={(props) => (
-                    <TournamentContainer ageGroup="adults" />
-                  )}
-                />
-              <Route
-                  path="/tournaments/juniors"
-                  render={(props) => (
-                    <TournamentContainer ageGroup="juniors" />
-                  )}
-                />
-          </Switch>
-        </div>
-    );
+  return(
+      <div>
+        <HeaderContainer />
+        <Switch>
+            <Route exact path="/" component={HomeContainer} />
+            <Route
+                path="/tournaments/adults"
+                render={(props) => (
+                  <TournamentContainer ageGroup="adults" />
+                )}
+              />
+            <Route
+                path="/tournaments/juniors"
+                render={(props) => (
+                  <TournamentContainer ageGroup="juniors" />
+                )}
+              />
+        </Switch>
+      </div>
+  );
 }
 
 export default App;
