@@ -9,6 +9,8 @@ import 'bootstrap/dist/js/bootstrap.js';
 import 'jquery/dist/jquery.js';
 import 'popper.js/dist/popper.js';
 
+import '_SiteCss';
+
 const render = (Component) => {
   ReactDOM.render(
     <AppContainer>

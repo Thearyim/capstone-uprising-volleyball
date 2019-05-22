@@ -2,12 +2,12 @@
 }
 
 .header nav {
-    height: 90px;
+    min-height: 70px;
 }
 
 .brand-logo {
     height: 45px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .header-search {
@@ -19,14 +19,13 @@
   width: 50px;
 }
 
-.header-search button:hover {
-  background-color: #FFD000;
-  border: 1px solid white;
-}
-
 .header-search button img {
   height: 22px;
   margin-bottom: 7px;
+}
+
+.header-search input {
+  min-width: 50px;
 }
 
 .header-shopping-cart {
@@ -37,3 +36,17 @@
 .header-shopping-cart img {
   height: 30px;
 }
+
+.header-search button:hover {
+  background-color: #FFD000;
+  border: 1px solid white;
+}
+
+/* @media screen and (min-width: 768px) {
+}
+
+@media screen and (max-width: 768px) and (min-width: 480px) {
+}
+
+@media screen and (max-width: 480px) {
+} */

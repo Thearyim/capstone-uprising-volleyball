@@ -1,20 +1,54 @@
 .tournament {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  border: 1px solid #DDD;
-  border-radius: 3px;
+  padding: 20px 5px 10px 5px;
+  color: #CCC;
 }
 
 .tournament-name {
+  font-size: 18pt;
+  font-weight: bold;
+  color: #999;
+}
+
+.tournament-headers {
   font-size: 13pt;
   font-weight: bold;
-  color: blue;
+  text-decoration: underline;
+  color: #AAA;
+  display: grid;
+  grid-template-columns: 50% 30% 20%;
+  margin-left: 40px;
 }
 
-.tournament-date {
+.tournament-division {
+  margin-top: 5px;
+  margin-bottom: 25px;
+}
+
+.tournament-division-header {
+  font-size: 13pt;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.tournament-division-name a {
   font-size: 12pt;
   font-weight: bold;
+  color: #CCC;
 }
 
-.tournament-description {
+.tournament-division-name:hover {
+  color: #0000FF;
+  text-decoration: underline;
+}
+
+.tournament-division-dates {
+  padding-left: 70px;
+}
+
+.tournament-registration-fee {
+}
+
+.tournament-division-info {
+  margin-left: 10px;
 }

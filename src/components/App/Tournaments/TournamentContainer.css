@@ -1,0 +1,13 @@
+body {
+  background-image: url('https://avp.com/wp-content/uploads/BGImage_2880x1920-1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.tournamentContainer {
+    margin-left: 50px;
+    margin-right: 50px;
+    border: none;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.1);
+}

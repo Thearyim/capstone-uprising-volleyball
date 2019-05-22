@@ -12,15 +12,9 @@ const App = () => {
         <Switch>
             <Route exact path="/" component={HomeContainer} />
             <Route
-                path="/tournaments/adults"
+                path="/tournaments"
                 render={(props) => (
                   <TournamentContainer ageGroup="adults" />
-                )}
-              />
-            <Route
-                path="/tournaments/juniors"
-                render={(props) => (
-                  <TournamentContainer ageGroup="juniors" />
                 )}
               />
         </Switch>

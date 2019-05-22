@@ -2,14 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import './HeaderContainer.css';
-import uprisingLogo from '../../../assets/images/uprising_logo.png';
-import searchButtonIcon from '../../../assets/images/search_button_icon.png';
-import shoppingCartIcon from '../../../assets/images/shopping_cart_icon.png';
+import uprisingLogo from '_SiteImages/uprising_logo.png';
+import searchButtonIcon from '_SiteImages/search_button_icon.png';
+import shoppingCartIcon from '_SiteImages/shopping_cart_icon.png';
 
 const HeaderContainer = () => {
 
   return(
-    <div>
       <div className="header">
         <nav className="navbar navbar-expand-lg navbar-light bg-warning">
           <img className="brand-logo" src={uprisingLogo} />
@@ -21,14 +20,8 @@ const HeaderContainer = () => {
               <li className="nav-item active">
                 <Link className="nav-link" to="/">Home</Link>
               </li>
-              <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Tournaments
-                </a>
-                <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <Link className="dropdown-item" to="/tournaments/adults">Adults</Link>
-                  <Link className="dropdown-item" to="/tournaments/juniors">Juniors</Link>
-                </div>
+              <li className="nav-item">
+                <Link className="nav-link" to="/tournaments">Tournaments</Link>
               </li>
               <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -67,7 +60,6 @@ const HeaderContainer = () => {
           </div>
         </nav>
       </div>
-    </div>
   );
 }
 
