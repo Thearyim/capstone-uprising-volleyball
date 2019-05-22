@@ -10,6 +10,7 @@ class MockData {
       }
     });
 
+    // console.log(dates);
     return dates;
   }
 
@@ -97,7 +98,7 @@ class MockData {
         description: 'Description: 2019 Junior Uprising Cup at Willis Tucker Park',
         divisions: [
           {
-            id: 3,
+            id: 4,
             name: 'June 1/2 Uprising Cup #3, The Snohomish Open',
             description: `The first tournament for ${ageGroup}`,
             fee: 68.00,
@@ -115,7 +116,7 @@ class MockData {
             ]
           },
           {
-            id: 4,
+            id: 5,
             name: 'June 9 Uprising Cup #4, The Five12 Challenge',
             description: `The second tournament for ${ageGroup}`,
             fee: 68.00,
@@ -133,7 +134,7 @@ class MockData {
             ]
           },
           {
-            id: 5,
+            id: 6,
             name: 'July 28 Uprising Cup #5, Team Uprising VolleyFest',
             description: `The second tournament for ${ageGroup}`,
             fee: 68.00,
@@ -158,7 +159,7 @@ class MockData {
         description: 'Description: 2019 Junior Uprising Cup at Willis Tucker Park',
         divisions: [
           {
-            id: 3,
+            id: 7,
             name: 'June 1/2 Uprising Cup #3, The Snohomish Open',
             description: `The first tournament for ${ageGroup}`,
             fee: 68.00,
@@ -176,7 +177,7 @@ class MockData {
             ]
           },
           {
-            id: 4,
+            id: 8,
             name: 'June 9 Uprising Cup #4, The Five12 Challenge',
             description: `The second tournament for ${ageGroup}`,
             fee: 68.00,
@@ -194,7 +195,7 @@ class MockData {
             ]
           },
           {
-            id: 5,
+            id: 9,
             name: 'July 28 Uprising Cup #5, Team Uprising VolleyFest',
             description: `The second tournament for ${ageGroup}`,
             fee: 68.00,
@@ -219,7 +220,7 @@ class MockData {
         description: 'Description: 2019 Junior Uprising Cup at Willis Tucker Park',
         divisions: [
           {
-            id: 3,
+            id: 10,
             name: 'June 1/2 Uprising Cup #3, The Snohomish Open',
             description: `The first tournament for ${ageGroup}`,
             fee: 68.00,
@@ -237,7 +238,7 @@ class MockData {
             ]
           },
           {
-            id: 4,
+            id: 11,
             name: 'June 9 Uprising Cup #4, The Five12 Challenge',
             description: `The second tournament for ${ageGroup}`,
             fee: 68.00,
@@ -255,7 +256,7 @@ class MockData {
             ]
           },
           {
-            id: 5,
+            id: 12,
             name: 'July 28 Uprising Cup #5, Team Uprising VolleyFest',
             description: `The second tournament for ${ageGroup}`,
             fee: 68.00,

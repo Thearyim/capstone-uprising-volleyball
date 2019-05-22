@@ -1,9 +1,12 @@
 import React from 'react';
 import SiteUtils from '_SiteJs';
+import MockData from '_MockDataJs';
 import './Registration.css';
 
 
 const Registration = ({ info }) => {
+
+  var mockData = new MockData();
 
   function formatDate(date) {
       // Example Format:
@@ -18,8 +21,13 @@ const Registration = ({ info }) => {
       return date.toLocaleDateString("en-US", options);
   }
 
+  function getRegistrationFee(division) {
+    var fee = parseFloat(division.fee);
+    return fee.toFixed(2);
+  }
+
   function getRegisterByDateString(division) {
-    var dates = getTournamentDates(division, 'registrationClose');
+    var dates = mockData.getTournamentDates(division, 'registrationClose');
     if (dates == null) {
       throw `Registration date not found for tournament division '${division.name}'`;
     }
@@ -33,18 +41,6 @@ const Registration = ({ info }) => {
 
     var registrationDate = new Date(dates[0].begin);
     return registrationDate.toLocaleDateString("en-US", options);
-  }
-
-  function getTournamentDates(division, type) {
-    var dates = [];
-    division.dates.forEach((date) =>
-    {
-      if (date.description == type) {
-        dates.push(date);
-      }
-    });
-
-    return dates;
   }
 
   return(
@@ -63,15 +59,16 @@ const Registration = ({ info }) => {
                 <div className="division-name"><a href="#">{division.name}</a></div>
                 <div>{getRegisterByDateString(division)}</div>
                 <div className="registration-fee">
-                  <a href='#'>Fee: ${parseFloat(division.fee)}</a>
+                  <a href='#'>Fee: ${getRegistrationFee(division)}</a>
                 </div>
               </div>
               <div className="division-dates">
                 <div>
                 {
-                  getTournamentDates(division, 'play').map((date, key) =>
-                    <div key={division.id}>day 1: {formatDate(new Date(date.begin))}</div>
-                )}
+                  mockData.getTournamentDates(division, 'play').map((date, index, key) =>
+                    <div key={date.begin}>day {index + 1}: {formatDate(new Date(date.begin))}</div>
+                  )
+                }
                 </div>
               </div>
             </div>
