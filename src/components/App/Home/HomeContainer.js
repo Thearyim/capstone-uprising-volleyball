@@ -1,10 +1,11 @@
 import React from 'react';
+import PromotionContainer from '../Promotions/PromotionContainer.js';
 
 const HomeContainer = () => {
 
     return(
       <div>
-        <h1>Event List</h1>
+        <PromotionContainer />
       </div>
     );
 }

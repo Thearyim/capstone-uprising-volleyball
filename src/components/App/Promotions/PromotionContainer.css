@@ -1,4 +1,4 @@
-.registration-container {
+.promotion-container {
   margin-top: 50px;
   margin-left: 100px;
   margin-right: 100px;
@@ -9,17 +9,19 @@
   border-top-right-radius: 4px;
 }
 
-.registration-container .title {
+.promotion-container .title {
+  height:80px;
   font-size: 22pt;
   font-weight: bold;
-  padding: 10px 30px 10px 30px;
+  padding: 15px 50px 0px 30px;
   color: #BBB;
   background-color: #444;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
 }
 
-.registration-container .title img {
-  height: 30px;
+.promotion-container .title img {
+  height: 35px;
   margin-right: 10px;
+  margin-bottom: 20px;
 }

@@ -277,6 +277,35 @@ class MockData {
       }
     ]
   }
+
+  getPromotions(){
+    return [
+      {
+        id: 1,
+        name: 'Win a Chance to Play with the pro!',
+        description: '###Win a Chance to Play with the pro! \n\n **Support Uprising Volleyball by Donating Today.**  \n  Support Uprising Volleyball with a donation between April 11 and May 23 and you will be entered to win a chance to play with The Lorax, [Jeremy Casebeer at Uprising Volleyball\'s Play with the Pro event](https://someevent) from 6-8pm at Willis Tucker Park in Snohomish.',
+        dates: [
+          {
+            description: 'promotionEnds',
+            begin: '2019-05-25T00:00:00.0000000Z',
+            end: '2019-05-25T11:59:59.0000000Z'
+          }
+        ]
+      },
+      {
+        id: 2,
+        name: 'Win a Chance to Play with the pro!',
+        description: '###Win a Chance to Play with the pro! \n\n **Support Uprising Volleyball by Donating Today.**  \n  Support Uprising Volleyball with a donation between April 11 and May 23 and you will be entered to win a chance to play with The Lorax, [Jeremy Casebeer at Uprising Volleyball\'s Play with the Pro event](https://someevent) from 6-8pm at Willis Tucker Park in Snohomish.',
+        dates: [
+          {
+            description: 'promotionEnds',
+            begin: '2019-05-25T00:00:00.0000000Z',
+            end: '2019-05-25T11:59:59.0000000Z'
+          }
+        ]
+      }
+    ]
+  }
 }
 
 export default MockData;
