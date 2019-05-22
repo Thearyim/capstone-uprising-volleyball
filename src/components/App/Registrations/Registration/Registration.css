@@ -1,43 +1,42 @@
-.tournament {
+.registration {
   margin-left: 20px;
   margin-right: 20px;
   padding: 20px 5px 10px 10px;
 }
 
-.tournament-name {
+.registration-name {
   font-size: 18pt;
   font-weight: bold;
 }
 
-.tournament-headers {
+.registration-headers {
   font-size: 11pt;
   font-weight: bold;
   text-decoration: underline;
   display: grid;
-  grid-template-columns: 5% 60% 35%;
+  grid-template-columns: 50% 25% 25%;
 }
 
-.tournament-division {
+.registration-division {
   margin-top: 5px;
   margin-bottom: 10px;
   padding: 12px 3px 12px 3px;
-  display: grid;
-  grid-template-columns: 5% 60% 35%;
 }
 
-.tournament-division:hover {
+.registration-division:hover {
   background-color: rgba(0, 200, 0, 0.1);
 }
 
-.division-header {
+.registration-details {
+  display: grid;
+  grid-template-columns: 50% 25% 25%;
+}
+
+.registration-division-header {
   font-size: 13pt;
   font-weight: bold;
   margin-top: 5px;
   margin-bottom: 5px;
-}
-
-.division-logo img {
-  height: 20px;
 }
 
 .division-name a {
@@ -50,6 +49,14 @@
   text-decoration: underline;
 }
 
-.division-date {
+.division-dates {
+  padding-left: 30px;
   font-size: 12pt;
+}
+
+.registration-fee {
+}
+
+.registration-division-info {
+  margin-left: 10px;
 }

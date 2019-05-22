@@ -21,7 +21,8 @@ module.exports = {
     alias: {
       _SiteCss: resolve(__dirname, 'src/css/site.css'),
       _SiteImages: resolve(__dirname, 'src/images'),
-      _SiteJs: resolve(__dirname, 'src/js/site.js')
+      _SiteJs: resolve(__dirname, 'src/js/site.js'),
+      _MockDataJs: resolve(__dirname, 'src/js/mockData.js')
     },
     extensions: ['.js', '.jsx']
   },

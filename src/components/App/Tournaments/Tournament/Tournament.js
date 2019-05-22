@@ -1,85 +1,45 @@
 import React from 'react';
 import SiteUtils from '_SiteJs';
+import MockData from '_MockDataJs';
 import './Tournament.css';
+import avpLogo from '_SiteImages/avp_logo.png';
 
 
 const Tournament = ({ info }) => {
 
-  function formatDate(date) {
-      // Example Format:
-      // Monday July 5th, 2019
-      var options = {
-        weekday: 'long',
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric'
-      };
+  var mockData = new MockData();
 
-      return date.toLocaleDateString("en-US", options);
-  }
-
-  function getRegisterByDateString(division) {
-    var dates = getTournamentDates(division, 'registrationClose');
+  function getTournamentDateString(division) {
+    var dates = mockData.getTournamentDates(division, 'play');
     if (dates == null) {
-      throw `Registration date not found for tournament division '${division.name}'`;
+      throw `Tournament date not found for tournament division '${division.name}'`;
     }
 
     var options = {
       year: 'numeric',
       month: 'long',
-      day: 'numeric',
-      timeZoneName: 'short'
+      day: 'numeric'
     };
 
-    var registrationDate = new Date(dates[0].begin);
-    return registrationDate.toLocaleDateString("en-US", options);
-  }
-
-  function getTournamentDates(division, type) {
-    var dates = [];
-    division.dates.forEach((date) =>
-    {
-      if (date.description == type) {
-        dates.push(date);
-      }
-    });
-
-    return dates;
-  }
-
-  var myStyle = {
-    display: 'grid',
-    gridTemplateColumns: '50% 30% 20%',
-    marginLeft: '40px'
+    var tournamentDate = new Date(dates[0].begin);
+    return tournamentDate.toLocaleDateString("en-US", options);
   }
 
   return(
-    <div className="container tournament">
+    <div className="tournament">
       <div className="tournament-name">{info.name}</div>
       <div className="tournament-headers">
-        <div>Division</div>
-        <div>Register By</div>
-        <div>Register/Fee</div>
+        <div></div>
+        <div></div>
+        <div>Start Date</div>
       </div>
       <div>
         {
           info.divisions.map((division, key) =>
-            <div key={division.id} className="tournament-division ">
-              <div style={myStyle}>
-                <div className="tournament-division-name"><a href="#">{division.name}</a></div>
-                <div>{getRegisterByDateString(division)}</div>
-                <div className="tournament-registration-fee">
-                  <a href='#'>Fee: ${parseFloat(division.fee)}</a>
-                </div>
-              </div>
-              <div className="tournament-division-dates">
-                <div>
-                {
-                  getTournamentDates(division, 'play').map((date, key) =>
-                    <div key={division.id}>| {formatDate(new Date(date.begin))}</div>
-                )}
-                </div>
-              </div>
+            <div key={division.id} className="tournament-division">
+                <div className="division-logo"><img src={avpLogo} alt="AVP logo" /></div>
+                <div className="division-name"><a href="#">{division.name}</a></div>
+                <div className="division-date">{getTournamentDateString(division)}</div>
             </div>
         )}
       </div>

@@ -1,4 +1,11 @@
-.tournament-container {
+body {
+  /* background-image: url('https://avp.com/wp-content/uploads/BGImage_2880x1920-1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover; */
+  background-color: black;
+}
+
+.registration-container {
   margin-top: 50px;
   margin-left: 100px;
   margin-right: 100px;
@@ -9,7 +16,7 @@
   border-top-right-radius: 4px;
 }
 
-.tournament-container .title {
+.registration-container .title {
   font-size: 22pt;
   font-weight: bold;
   padding: 10px 30px 10px 30px;
@@ -19,7 +26,7 @@
   border-top-right-radius: 4px;
 }
 
-.tournament-container .title img {
+.registration-container .title img {
   height: 30px;
   margin-right: 10px;
 }

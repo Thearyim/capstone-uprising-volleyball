@@ -1,5 +1,17 @@
 
-class TournamentMockData {
+class MockData {
+
+  getTournamentDates(division, type) {
+    var dates = [];
+    division.dates.forEach((date) =>
+    {
+      if (date.description == type) {
+        dates.push(date);
+      }
+    });
+
+    return dates;
+  }
 
   getTournaments(ageGroup) {
     return [
@@ -266,4 +278,4 @@ class TournamentMockData {
   }
 }
 
-export default TournamentMockData;
+export default MockData;
